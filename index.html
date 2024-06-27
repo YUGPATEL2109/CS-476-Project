@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Consultation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Remote Consultation</h1>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img src="profile-logo.jpg" alt="Profile Logo" class="profile-logo" onclick="toggleForms()">
+        </nav>
+    </header>
+    
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2>When Healthcare Meets Convenience</h2>
+            <p>Providing quality medical consultations to rural areas in Saskatchewan.</p>
+        </div>
+    </section>
+    
+    <section id="about" class="description">
+        <h2>About Us</h2>
+        <p>Rural areas in Saskatchewan have not been getting enough medical attention. This website is created for them so they can have consultations from their leisure. Our mission is to provide accessible and convenient healthcare services to the residents of rural Saskatchewan. We understand the challenges faced by people living in remote areas and aim to bridge the gap between them and quality medical care. Remote consultation allows patients to connect with healthcare professionals through video calls, eliminating the need for in-person visits. This is especially beneficial for people living in rural areas who may have limited access to healthcare facilities or face difficulties traveling long distances.</p>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>We offer a wide range of medical services through our remote consultation platform, including:</p>
+        <ul>
+            <li>General check-ups and consultations</li>
+            <li>Chronic disease management</li>
+            <li>Mental health support</li>
+            <li>Pediatric care</li>
+            <li>Women's health</li>
+            <li>Geriatric care</li>
+        </ul>
+        <p>Our team of experienced and licensed healthcare professionals is dedicated to providing personalized care and ensuring the best possible outcomes for our patients.</p>
+        <img src="services-photo.jpg" alt="Services Photo" class="services-photo">
+    </section>
+    
+    <section class="convenience">
+        <h3>Convenience and Accessibility</h3>
+        <p>With our user-friendly platform, patients can easily schedule appointments, upload medical records, and communicate with their healthcare providers from the comfort of their homes. We strive to make healthcare more accessible and convenient for everyone, regardless of their location.</p>
+    </section>
+    
+    <section class="quality">
+        <h3>Commitment to Quality</h3>
+        <p>At Remote Consultation, we are committed to providing high-quality healthcare services. We ensure that our platform meets the highest standards of security and privacy, and our healthcare professionals undergo rigorous training and background checks.</p>
+    </section>
+    
+    <section id="contact" class="join">
+        <h3>Join Our Community</h3>
+        <p>By choosing Remote Consultation, you become part of a growing community of individuals who prioritize their health and well-being. Together, we can work towards a future where everyone has access to the healthcare services they need, whenever and wherever they need them.</p>
+        <p>Contact us today to learn more about how Remote Consultation can benefit you and your loved ones.</p>
+    </section>
+    
+    <section class="forms hidden" id="forms">
+        <div class="form-container">
+            <button class="toggle-btn" onclick="showLogin()">Login</button>
+            <button class="toggle-btn" onclick="showSignup()">Sign Up</button>
+            <div id="login-form" class="form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </div>
+            <div id="signup-form" class="form hidden">
+                <h2>Create Account</h2>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
